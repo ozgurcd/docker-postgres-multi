@@ -1,5 +1,5 @@
 # vim:set ft=dockerfile:
-FROM postgres:12
+FROM postgres:15.4
 
 COPY docker-entrypoint.sh /usr/local/bin/
 

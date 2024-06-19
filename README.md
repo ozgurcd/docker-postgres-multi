@@ -1,8 +1,10 @@
 # docker-postgres-multi
 
+This fork is based on  lmm-git/docker-postgres-multi.
+
 Docker image to run a **PostgreSQL** database in a docker container with multiple users and databases.
 
-Image is based of the official postgres:12 image. It modifies the `docker-entrypoint.sh` to allow setup of multiple users and databases. Therefore there are two new environment variables that can be set `POSTGRES_USERS` and `POSTGRES_DATABASES`. The functionality of `POSTGRES_USER` and `POSTGRES_DB` is unimpeded. If set the given user and database will be created in addition to the other given users.
+Image is based of the official postgres:15.41 image. It modifies the `docker-entrypoint.sh` to allow setup of multiple users and databases. Therefore there are two new environment variables that can be set `POSTGRES_USERS` and `POSTGRES_DATABASES`. The functionality of `POSTGRES_USER` and `POSTGRES_DB` is unimpeded. If set the given user and database will be created in addition to the other given users.
 
 ### Usage
 
